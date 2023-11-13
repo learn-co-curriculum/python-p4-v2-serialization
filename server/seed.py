@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#server/seed.py
+# server/seed.py
 from random import choice as rc
 from faker import Faker
 
@@ -7,7 +7,6 @@ from app import app
 from models import db, Pet
 
 with app.app_context():
-
     # Create and initialize a faker generator
     fake = Faker()
 
@@ -17,7 +16,7 @@ with app.app_context():
     # Create an empty list
     pets = []
 
-    species = ['Dog', 'Cat', 'Chicken', 'Hamster', 'Turtle']
+    species = ["Dog", "Cat", "Chicken", "Hamster", "Turtle"]
 
     # Add some Pet instances to the list
     for n in range(10):
